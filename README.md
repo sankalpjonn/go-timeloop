@@ -15,7 +15,7 @@ package main
 
 import (
 	"log"
-	"github.com/sankalpjonn/timeloop"
+	"github.com/sankalpjonn/go-timeloop"
 )
 func main() {
 	tl := timeloop.New()
