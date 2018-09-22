@@ -6,7 +6,7 @@ timeloop is a service that can be used to run periodic tasks after a certain int
 
 ## Installation
 ```sh
-go get github.com/sankalpjonn/timeloop
+go get github.com/sankalpjonn/go-timeloop
 ```
 
 ## Writing jobs
