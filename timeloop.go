@@ -17,7 +17,7 @@ func New() *Timeloop {
 	return new(Timeloop)
 }
 
-func (self *Timeloop) AddJob(f func(), interval time.Duration) {
+func (self *Timeloop) Job(f func(), interval time.Duration) {
 	self.jobs = append(self.jobs, newJob(f, interval))
 }
 

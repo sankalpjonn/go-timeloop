@@ -15,15 +15,15 @@ func TestTimeloopBlockingStart(*testing.T) {
 
 	tl := New()
 
-	tl.AddJob(func() {
+	tl.Job(func() {
 		log.Println("printing Test2SecTimer")
 	}, time.Second * 2)
 
-	tl.AddJob(func() {
+	tl.Job(func() {
 		log.Println("printing Test5SecTimer")
 	}, time.Second * 5)
 
-	tl.AddJob(func() {
+	tl.Job(func() {
 		log.Println("printing Test10SecTimer")
 	}, time.Second * 10)
 
@@ -38,15 +38,15 @@ func TestTimeloopBackgroundStart(*testing.T) {
 
 	tl := New()
 
-	tl.AddJob(func() {
+	tl.Job(func() {
 		log.Println("printing Test2SecTimer")
 	}, time.Second * 2)
 
-	tl.AddJob(func() {
+	tl.Job(func() {
 		log.Println("printing Test5SecTimer")
 	}, time.Second * 5)
 
-	tl.AddJob(func() {
+	tl.Job(func() {
 		log.Println("printing Test10SecTimer")
 	}, time.Second * 10)
 
